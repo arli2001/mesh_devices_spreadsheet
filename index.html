@@ -8,7 +8,24 @@
     <script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
 </head>
 <body>
-    <h1>Spreadsheet Data</h1>
+    <h1>Mesh devices</h1>
+    <h2>Types</h2>
+    <ul>
+        <li><strong>Bare Module: </strong>No case and not usable out of the box</li>
+        <li><strong>Portable: </strong>Case and usable out of the box with a smartphone</li>
+        <li><strong>Handheld: </strong>Case and usable out of the box standalone (additional battery may be required, e.g. for the SenseCAP Indicator) </li>
+        <li><strong>Fixed: </strong>Designed as a fixed node</li>
+        <li><strong>Gateway: </strong>Designed as a gateway with another protocol</li>
+        <li><strong>Bare Module/Portable: </strong>Depends on the options chosen at purchase</li>
+    </ul>
+    <h2>Other remarks</h2>
+    <ul>
+        <li>Battery life only present if independently tested (minimum value)</li>
+        <li>Solar only if option present on manufacturer's website</li>
+        <li>Prices are in USD from manufacturer's websites</li>
+        <li>dBm present only if different from standard LoRa chip power, as advertised by manufacturers</li>
+        <li>Firmwares are from official GitHub repositories and flashers, manufacturer firmwares excluded</li>
+    </ul>
     <div id="table-container">Loading data...</div>
     <script>
     const FILE_URL = "mesh.csv";

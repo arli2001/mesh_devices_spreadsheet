@@ -1,86 +1,86 @@
-Model,Brand,Type,Bluetooth,Wi-Fi,GNSS,IP rating,Case,Screen type,Screen optional,Screen size,Interaction,Battery capacity,Battery life (hours),Battery optional,Solar,Price (min),Price (max),MCU,Radio,dBm,Replaceable antenna,Meshtastic,Meshcore Companion,Meshcore Repeater,Meshcore Room Server,Ripple,Micro-reticulum,Rnode
-CrowPanel Advance 3.5,Elecrow,Bare Module / Portable,Yes,Yes,Optional,N/A,Optional,IPS LCD,No,3.5,Touch Screen,N/A,N/A,N/A,No,36.3,38.1,ESP32-S3,SX1262,?,Yes,MUI,No,No,No,No,No,No
-ThinkNode M1,Elecrow,Portable,Yes,No,Yes,N/A,Yes,eInk,No,1.54,Button,1200,52,No,No,53.9,53.9,nRF52840,SX1262,?,Kindof,Yes,Yes,Yes,Yes,No,No,No
-ThinkNode M2,Elecrow,Bare Module,Yes,Yes,No,N/A,No,OLED,No,1.3,Button,1000,?,Yes,No,20.9,21.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,No,Yes,No,No,No
-ThinkNode M3,Elecrow,Portable,Yes,No,Yes,66,Yes,N/A,N/A,N/A,N/A,770,?,No,No,39.9,39.9,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
-ThinkNode M4,Elecrow,Portable,Yes,No,Yes,N/A,Yes,N/A,N/A,N/A,N/A,7000,?,No,No,60.4,60.4,nRF52840,LR1110,?,No,Yes,No,No,No,No,No,No
-ThinkNode M5,Elecrow,Portable,Yes,Yes,Yes,N/A,Yes,eInk,No,1.54,Button,1200,?,No,No,53.9,53.9,ESP32-S3,SX1262,?,Kindof,Yes,Yes,No,Yes,No,No,No
-ThinkNode M6,Elecrow,Fixed,Yes,No,Yes,65,Yes,N/A,N/A,N/A,N/A,7000,?,No,Yes,79.9,79.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-ThinkNode M7,Elecrow,Gateway,Yes,Yes,No,N/A,Yes,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,54.9,54.9,ESP32-S3,LR1110,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-ThinkNode M9,Elecrow,Handheld,Yes,Yes,Yes,N/A,Yes,TFT LCD,No,2.4,Keyboard,2300,?,No,No,74.9,74.9,ESP32-S3,LR1110,?,No,Yes,No,No,No,Yes,No,No
-Capsule Sensor Rev 3.0,Heltec,Portable,Yes,Yes,Optional,65,Yes,N/A,N/A,N/A,N/A,250,?,No,No,25.9,25.9,ESP32-S3,SX1262,?,No,Yes,No,No,No,No,No,No
-HT-CT62,Heltec,Bare Module,Yes,Yes,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,6.9,6.9,ESP32-C3,SX1262,?,Yes,Yes,No,No,No,No,No,No
-LoRa 32 V3,Heltec,Bare Module / Portable,Yes,Yes,No,N/A,Optional,OLED,No,0.96,Button,N/A,N/A,N/A,No,17.9,19.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-LoRa 32 V4,Heltec,Bare Module,Yes,Yes,No,N/A,No,OLED,Yes,0.96,Button,N/A,N/A,N/A,No,17.9,27.5,ESP32-S3,SX1262,28,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-Mesh Node T096,Heltec,Bare Module,Yes,No,Yes,N/A,No,TFT LCD,No,0.96,Button,N/A,N/A,N/A,No,33.9,33.9,nRF52840,SX1262,28,Yes,Yes,Yes,Yes,Yes,No,No,No
-Mesh Node T1,Heltec,Portable,Yes,No,Yes,65,Yes,TFT LCD,No,0.96,Button,1850,?,No,No,39.9,39.9,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
-Mesh Node T114,Heltec,Bare Module / Portable,Yes,No,Optional,N/A,Optional,TFT LCD,Yes,1.14,Button,N/A,N/A,N/A,No,17.9,33.7,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,Yes
-MeshPocket 10000mAh,Heltec,Portable,Yes,No,No,N/A,Yes,eInk,No,2.3,Button,10000,?,No,No,49,59,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
-MeshPocket 5000mAh,Heltec,Portable,Yes,No,No,N/A,Yes,eInk,No,2.3,Button,5000,?,No,No,49,59,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
-MeshTower V2 22dBm,Heltec,Fixed,Yes,No,Yes,66,Yes,N/A,N/A,N/A,N/A,8400,?,No,Yes,109,109,nRF52840,SX1262,22,Yes,Yes,Yes,Yes,Yes,No,No,No
-MeshTower V2 30dBm,Heltec,Fixed,Yes,No,Optional,66,Yes,N/A,N/A,N/A,N/A,8400,?,No,Yes,119,129,nRF52840,SX1262,30,Yes,Yes,Yes,Yes,Yes,No,No,No
-Vision Master E213,Heltec,Bare Module,Yes,Yes,No,N/A,No,eInk,No,2.13,Button,N/A,N/A,N/A,No,18.9,20.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-Vision Master E290,Heltec,Bare Module,Yes,Yes,No,N/A,No,eInk,No,2.9,Button,N/A,N/A,N/A,No,19.9,21.9,ESP32-S3,SX1262,?,Yes,Yes,No,Yes,Yes,No,No,No
-Vision Master T190,Heltec,Bare Module,Yes,Yes,No,N/A,No,TFT LCD,No,1.9,Button,N/A,N/A,N/A,No,19,19,ESP32-S3,SX1262,?,Yes,Yes,No,No,No,No,No,No
-WiFi LoRa 32 Expansion Kit,Heltec,Handheld,Yes,Yes,Optional,N/A,Yes,TFT LCD,Yes,1.3,Touch Screen,N/A,N/A,18650,No,49.9,58.9,ESP32-S3,SX1262,28,Yes,MUI,Yes,Yes,Yes,Yes,No,No
-Wireless Paper V1.1,Heltec,Bare Module,Yes,Yes,No,N/A,No,eInk,No,2.13,Button,N/A,N/A,N/A,No,15.9,15.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-Wireless Stick Lite V3,Heltec,Bare Module,Yes,Yes,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,14.9,14.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-Wireless Tracker V1.1,Heltec,Bare Module,Yes,Yes,Yes,N/A,No,TFT LCD,Yes,0.96,Button,N/A,N/A,N/A,No,22.9,22.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-Wireless Tracker V2,Heltec,Bare Module,Yes,Yes,Yes,N/A,No,TFT LCD,No,0.96,Button,N/A,N/A,N/A,No,30.9,30.9,ESP32-S3,SX1262,28,Yes,Yes,Yes,Yes,Yes,No,Yes,No
-T-Beam ,LILYGO,Bare Module,Yes,Yes,Yes,N/A,No,OLED,Yes,0.96,Button,N/A,N/A,N/A,No,30.77,35.56,ESP32,SX1276,?,Yes,Community,Yes,Yes,Yes,No,Yes,Yes
-T-Beam 1W,LILYGO,Bare Module,Yes,Yes,Yes,N/A,No,OLED,No,1.3,Button,N/A,N/A,N/A,No,47.32,47.32,ESP32-S3,SX1262,32,Yes,Yes,Yes,Yes,Yes,No,No,No
-T-Beam Supreme,LILYGO,Bare Module,Yes,Yes,Yes,N/A,No,OLED,No,1.3,Button,N/A,N/A,18650,No,40.35,51.15,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-T-Deck,LILYGO,Bare Module,Yes,Yes,No,N/A,No,IPS LCD,No,2.8,Keyboard,N/A,N/A,N/A,No,46.52,46.52,ESP32-S3,SX1262,?,Yes,MUI,Yes,Yes,No,Yes,Yes,Yes
-T-Deck Max,LILYGO,Handheld,Yes,Yes,Yes,N/A,Yes,eInk,No,3.1,Touch Screen,1400,?,No,No,109.67,109.87,ESP32-S3,SX1262,?,Yes,No,No,No,No,Yes,No,No
-T-Deck Plus,LILYGO,Handheld,Yes,Yes,Yes,N/A,Yes,IPS LCD,No,2.8,Keyboard,2000,?,No,No,77.16,82.11,ESP32-S3,SX1262,?,Optional,MUI,Yes,Yes,No,Yes,Yes,Yes
-T-Deck Pro,LILYGO,Handheld,Yes,Yes,Yes,N/A,Yes,eInk,No,3.1,Touch Screen,1400,?,No,No,92.35,110.85,ESP32-S3,SX1262,?,Optional,Yes,No,No,No,Yes,No,No
-T-Echo,LILYGO,Portable,Yes,No,Yes,N/A,Yes,eInk,No,1.54,Button,850,?,No,No,48.49,48.49,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-T-Echo Card,LILYGO,Portable,Yes,No,Yes,66,Yes,N/A,N/A,N/A,N/A,800,?,No,Yes,59.31,61.42,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
-T-Echo Lite,LILYGO,Bare Module / Portable,Yes,No,Optional,N/A,Optional,eInk,Yes,1.22,Button,N/A,N/A,N/A,No,15.74,38.28,nRF52840,SX1262,?,Optional,Yes,Yes,Yes,Yes,No,No,No
-T-Echo Lite Kit,LILYGO,Handheld,Yes,No,Optional,N/A,Yes,eInk,No,1.22,Keyboard,N/A,N/A,N/A,No,65.34,66.21,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-T-Echo Plus,LILYGO,Portable,Yes,No,Yes,N/A,Yes,eInk,No,1.54,Button,2400,?,No,No,64.22,66.31,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-T-Lora C6,LILYGO,Bare Module,Yes,Yes,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,16.52,16.52,ESP32-C6,SX1262,?,No,No,No,No,No,No,No,No
-T-Lora Pager,LILYGO,Handheld,Yes,Yes,Yes,N/A,Yes,IPS LCD,No,2.3,Keyboard,500,?,No,No,88,94.39,ESP32-S3,LR1121,?,No,Yes,No,No,No,Yes,No,No
-T-Watch S3,LILYGO,Portable,Yes,Yes,No,N/A,Yes,IPS LCD,No,1.54,Button,470,?,No,No,42.98,43.99,ESP32-S3,SX1262,?,No,Community,No,No,No,No,No,No
-T-Watch S3 Plus,LILYGO,Portable,Yes,Yes,No,N/A,Yes,IPS LCD,No,1.54,Button,940,?,No,No,58.74,58.74,ESP32-S3,SX1262,?,No,No,No,No,No,Yes,No,No
-T3 S3,LILYGO,Bare Module,Yes,Yes,No,N/A,No,OLED,No,0.96,Button,N/A,N/A,N/A,No,18.61,18.61,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-T5 E-Paper S3 Pro,LILYGO,Handheld,Yes,Yes,Optional,N/A,Yes,eInk,No,4.7,Touch Screen,1500,?,No,No,81.36,84.21,ESP32-S3,SX1262,?,No,No,No,No,No,Yes,No,No
-Cardputer Mesh Kit,M5Stack,Handheld,Yes,Yes,Yes,N/A,Yes,LCD,No,1.14,Keyboard,1750,?,No,No,48,48,ESP32-S3,SX1262,?,Yes,Yes,No,No,No,No,No,No
-Unit C6L,M5Stack,Portable,Yes,Yes,No,N/A,Yes,OLED,No,0.66,Button,N/A,N/A,N/A,No,22.9,22.9,ESP32-C6,SX1262,?,Yes,Yes,No,No,No,No,No,No
-Base Duo,muzi works,Bare Module,Yes,No,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,35,35,nRF52840,LR1121,20,Yes,Yes,No,No,No,No,No,No
-Base Uno,muzi works,Bare Module,Yes,No,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,25,25,nRF52840,SX1262,20,Yes,Yes,No,No,No,No,No,No
-WisBlock RAK11310,RAK,Bare Module,No,No,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,9.95,9.95,RP2040,SX1262,?,Yes,Yes,No,No,No,No,No,No
-WisBlock RAK3312,RAK,Bare Module,Yes,Yes,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,15,15,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,No
-WisBlock RAK4631,RAK,Bare Module,Yes,No,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,17.99,17.99,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh 1W Booster Starter Kit,RAK,Bare Module,Yes,No,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,39,39,nRF52840,SX1262,30,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Board ONE,RAK,Bare Module,Yes,No,Optional,N/A,No,OLED,Yes,1.3,Button,N/A,N/A,N/A,No,29.97,42.97,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Board ONE Pocket,RAK,Portable,Yes,No,Optional,N/A,Yes,OLED,No,1.3,Button,1000,?,No,No,46.97,59.97,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Ethernet MQTT Gateway,RAK,Gateway,Yes,No,No,65,Optional,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,43,114,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Pocket Mini,RAK,Portable,Yes,No,No,N/A,Yes,N/A,N/A,N/A,N/A,1000,?,No,No,59.97,59.97,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Pocket v2,RAK,Portable,Yes,No,Yes,N/A,Yes,OLED,No,1.3,Button,3200,?,No,No,89.97,89.97,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Repeater,RAK,Fixed,Yes,No,No,67,Yes,N/A,N/A,N/A,N/A,5200,?,Yes,Optional,99,299,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Repeater Mini,RAK,Fixed,Yes,No,No,67,Yes,N/A,N/A,N/A,N/A,3200,?,No,Yes,99,99,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Tag,RAK,Portable,Yes,No,Yes,66,Yes,N/A,N/A,N/A,N/A,1000,?,No,No,39,39,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Tap,RAK,Handheld,Yes,No,Yes,65,Yes,TFT,No,2.4,Touch Screen,3200,?,No,No,109,109,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-WisMesh Tap v2,RAK,Handheld,Yes,Yes,Yes,65,Yes,TFT,No,2.4,Touch Screen,3200,?,No,No,109,109,ESP32-S3,SX1262,?,Yes,MUI,Yes,Yes,Yes,No,Yes,Yes
-WisMesh WiFi MQTT Gateway,RAK,Gateway,Yes,Yes,No,65,Optional,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,34,68,ESP32,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-Pico,Raspberry Pi,Bare Module,No,No,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,4.6,4.6,RP2040,optional,N/A,N/A,Yes,No,No,No,No,No,No
-Pico 2,Raspberry Pi,Bare Module,No,No,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,5,5,RP2350,optional,N/A,N/A,Yes,No,No,No,No,No,No
-Pico 2 W,Raspberry Pi,Bare Module,No,Yes,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,7,7,RP2350,optional,N/A,N/A,Yes,No,No,No,No,No,No
-Pico W,Raspberry Pi,Bare Module,No,Yes,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,6,6,RP2040,optional,N/A,N/A,Yes,No,No,No,No,No,No
-SenseCAP Card Tracker T1000-E,Seeed Studio,Portable,Yes,No,Yes,65,Yes,N/A,N/A,N/A,N/A,700,51,No,No,39.9,39.9,nRF52840,LR1110,?,No,Yes,Yes,Yes,Yes,No,No,No
-SenseCAP Indicator,Seeed Studio,Handheld,Yes,Yes,Optional,N/A,Yes,Capacitive RGB,No,3.95,Touch Screen,N/A,N/A,N/A,No,59,59,ESP32-S3,SX1262,?,No,MUI,No,No,No,No,No,No
-SenseCAP MeshTracker X1,Seeed Studio,Portable,Yes,No,Yes,66,Yes,N/A,N/A,N/A,N/A,1100,?,No,No,49.9,49.9,nRF52840,LR2021,?,No,Yes,Yes,Yes,Yes,No,No,No
-SenseCAP Solar Node,Seeed Studio,Fixed,Yes,No,Optional,N/A,Yes,N/A,N/A,N/A,N/A,N/A,N/A,18650,Yes,72.9,93.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-Wio Tracker 1110 Dev Kit,Seeed Studio,Bare Module,Yes,No,Yes,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,36.1,36.1,nRF52840,LR1110,?,Yes,Community,No,No,No,No,No,No
-Wio Tracker L1,Seeed Studio,Bare Module,Yes,No,Yes,N/A,No,OLED,No,1.3,Joystick,N/A,N/A,N/A,No,30.9,30.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,Yes,No,No
-Wio Tracker L1 E-Ink,Seeed Studio,Bare Module,Yes,No,Yes,N/A,No,eInk,No,2.13,Joystick,N/A,N/A,N/A,No,32.9,32.9,nRF52840,SX1262,?,Yes,Yes,Yes,No,No,No,No,No
-Wio Tracker L1 lite,Seeed Studio,Bare Module,Yes,No,Yes,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,28.9,28.9,nRF52840,SX1262,?,Yes,Yes,No,No,No,No,No,No
-Wio Tracker L1 Pro,Seeed Studio,Handheld,Yes,No,Yes,N/A,Yes,OLED,No,1.3,Joystick,2000,132,No,No,47.9,47.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,Yes,No,No
-Wio-E5 Dev Kit,Seeed Studio,Bare Module,No,No,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,26.9,26.9,STM32WLE5JC,STM32WLE5JC (SX126x like),?,Yes,?,No,No,No,No,No,No
-Wio-E5 mini Dev Board,Seeed Studio,Bare Module,No,No,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,21.9,21.9,STM32WLE5JC,STM32WLE5JC (SX126x like),?,Yes,?,No,No,No,No,No,No
-Wio-WM1110 Dev Kit,Seeed Studio,Bare Module,Yes,No,Optional,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,3 x AAA,No,32.9,32.9,nRF52840,LR1110,?,Yes,Community,No,No,No,No,No,No
-XIAO ESP32-S3 + SX1262,Seeed Studio,Bare Module / Portable,Yes,Yes,No,N/A,Optional,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,10.9,17.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
-XIAO nRF52840 + SX1262,Seeed Studio,Bare Module,Yes,No,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,13.49,13.49,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
-unPhone,unPhone,Handheld,Yes,Yes,No,N/A,Yes,resistive LCD,No,3.5,Touch Screen,1200,?,No,No,154.61,154.61,ESP32-S3,RF950W,?,No,Community MUI,No,No,No,No,No,No
-RP2040-LoRa,Waveshare,Bare Module,No,No,No,N/A,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,15.99,15.99,RP2040,SX1262,?,Yes,Community,Yes,Yes,Yes,No,No,No
+Model,Brand,Type,Bluetooth,Wi-Fi,GNSS,Case,IP rating,Screen type,Screen optional,Screen size,Interaction,Battery capacity,Battery life (hours),Battery optional,Solar,Price (min),Price (max),MCU,Radio,dBm,Replaceable antenna,Meshtastic,Meshcore Companion,Meshcore Repeater,Meshcore Room Server,Ripple,Micro-reticulum,Rnode
+CrowPanel Advance 3.5,Elecrow,Bare Module / Portable,Yes,Yes,Optional,Optional,N/A,IPS LCD,No,3.5,Touch Screen,N/A,N/A,N/A,No,36.3,38.1,ESP32-S3,SX1262,?,Yes,MUI,No,No,No,No,No,No
+ThinkNode M1,Elecrow,Portable,Yes,No,Yes,Yes,N/A,eInk,No,1.54,Button,1200,52,No,No,53.9,53.9,nRF52840,SX1262,?,Kindof,Yes,Yes,Yes,Yes,No,No,No
+ThinkNode M2,Elecrow,Bare Module,Yes,Yes,No,No,N/A,OLED,No,1.3,Button,1000,?,Yes,No,20.9,21.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,No,Yes,No,No,No
+ThinkNode M3,Elecrow,Portable,Yes,No,Yes,Yes,66,N/A,N/A,N/A,N/A,770,?,No,No,39.9,39.9,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
+ThinkNode M4,Elecrow,Portable,Yes,No,Yes,Yes,N/A,N/A,N/A,N/A,N/A,7000,?,No,No,60.4,60.4,nRF52840,LR1110,?,No,Yes,No,No,No,No,No,No
+ThinkNode M5,Elecrow,Portable,Yes,Yes,Yes,Yes,N/A,eInk,No,1.54,Button,1200,?,No,No,53.9,53.9,ESP32-S3,SX1262,?,Kindof,Yes,Yes,No,Yes,No,No,No
+ThinkNode M6,Elecrow,Fixed,Yes,No,Yes,Yes,65,N/A,N/A,N/A,N/A,7000,?,No,Yes,79.9,79.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+ThinkNode M7,Elecrow,Gateway,Yes,Yes,No,Yes,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,54.9,54.9,ESP32-S3,LR1110,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+ThinkNode M9,Elecrow,Handheld,Yes,Yes,Yes,Yes,N/A,TFT LCD,No,2.4,Keyboard,2300,?,No,No,74.9,74.9,ESP32-S3,LR1110,?,No,Yes,No,No,No,Yes,No,No
+Capsule Sensor Rev 3.0,Heltec,Portable,Yes,Yes,Optional,Yes,65,N/A,N/A,N/A,N/A,250,?,No,No,25.9,25.9,ESP32-S3,SX1262,?,No,Yes,No,No,No,No,No,No
+HT-CT62,Heltec,Bare Module,Yes,Yes,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,6.9,6.9,ESP32-C3,SX1262,?,Yes,Yes,No,No,No,No,No,No
+LoRa 32 V3,Heltec,Bare Module / Portable,Yes,Yes,No,Optional,N/A,OLED,No,0.96,Button,N/A,N/A,N/A,No,17.9,19.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+LoRa 32 V4,Heltec,Bare Module,Yes,Yes,No,No,N/A,OLED,Yes,0.96,Button,N/A,N/A,N/A,No,17.9,27.5,ESP32-S3,SX1262,28,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+Mesh Node T096,Heltec,Bare Module,Yes,No,Yes,No,N/A,TFT LCD,No,0.96,Button,N/A,N/A,N/A,No,33.9,33.9,nRF52840,SX1262,28,Yes,Yes,Yes,Yes,Yes,No,No,No
+Mesh Node T1,Heltec,Portable,Yes,No,Yes,Yes,65,TFT LCD,No,0.96,Button,1850,?,No,No,39.9,39.9,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
+Mesh Node T114,Heltec,Bare Module / Portable,Yes,No,Optional,Optional,N/A,TFT LCD,Yes,1.14,Button,N/A,N/A,N/A,No,17.9,33.7,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,Yes
+MeshPocket 10000mAh,Heltec,Portable,Yes,No,No,Yes,N/A,eInk,No,2.3,Button,10000,?,No,No,49,59,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
+MeshPocket 5000mAh,Heltec,Portable,Yes,No,No,Yes,N/A,eInk,No,2.3,Button,5000,?,No,No,49,59,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
+MeshTower V2 22dBm,Heltec,Fixed,Yes,No,Yes,Yes,66,N/A,N/A,N/A,N/A,8400,?,No,Yes,109,109,nRF52840,SX1262,22,Yes,Yes,Yes,Yes,Yes,No,No,No
+MeshTower V2 30dBm,Heltec,Fixed,Yes,No,Optional,Yes,66,N/A,N/A,N/A,N/A,8400,?,No,Yes,119,129,nRF52840,SX1262,30,Yes,Yes,Yes,Yes,Yes,No,No,No
+Vision Master E213,Heltec,Bare Module,Yes,Yes,No,No,N/A,eInk,No,2.13,Button,N/A,N/A,N/A,No,18.9,20.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+Vision Master E290,Heltec,Bare Module,Yes,Yes,No,No,N/A,eInk,No,2.9,Button,N/A,N/A,N/A,No,19.9,21.9,ESP32-S3,SX1262,?,Yes,Yes,No,Yes,Yes,No,No,No
+Vision Master T190,Heltec,Bare Module,Yes,Yes,No,No,N/A,TFT LCD,No,1.9,Button,N/A,N/A,N/A,No,19,19,ESP32-S3,SX1262,?,Yes,Yes,No,No,No,No,No,No
+WiFi LoRa 32 Expansion Kit,Heltec,Handheld,Yes,Yes,Optional,Yes,N/A,TFT LCD,Yes,1.3,Touch Screen,N/A,N/A,18650,No,49.9,58.9,ESP32-S3,SX1262,28,Yes,MUI,Yes,Yes,Yes,Yes,No,No
+Wireless Paper V1.1,Heltec,Bare Module,Yes,Yes,No,No,N/A,eInk,No,2.13,Button,N/A,N/A,N/A,No,15.9,15.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+Wireless Stick Lite V3,Heltec,Bare Module,Yes,Yes,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,14.9,14.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+Wireless Tracker V1.1,Heltec,Bare Module,Yes,Yes,Yes,No,N/A,TFT LCD,Yes,0.96,Button,N/A,N/A,N/A,No,22.9,22.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+Wireless Tracker V2,Heltec,Bare Module,Yes,Yes,Yes,No,N/A,TFT LCD,No,0.96,Button,N/A,N/A,N/A,No,30.9,30.9,ESP32-S3,SX1262,28,Yes,Yes,Yes,Yes,Yes,No,Yes,No
+T-Beam ,LILYGO,Bare Module,Yes,Yes,Yes,No,N/A,OLED,Yes,0.96,Button,N/A,N/A,N/A,No,30.77,35.56,ESP32,SX1276,?,Yes,Community,Yes,Yes,Yes,No,Yes,Yes
+T-Beam 1W,LILYGO,Bare Module,Yes,Yes,Yes,No,N/A,OLED,No,1.3,Button,N/A,N/A,N/A,No,47.32,47.32,ESP32-S3,SX1262,32,Yes,Yes,Yes,Yes,Yes,No,No,No
+T-Beam Supreme,LILYGO,Bare Module,Yes,Yes,Yes,No,N/A,OLED,No,1.3,Button,N/A,N/A,18650,No,40.35,51.15,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+T-Deck,LILYGO,Bare Module,Yes,Yes,No,No,N/A,IPS LCD,No,2.8,Keyboard,N/A,N/A,N/A,No,46.52,46.52,ESP32-S3,SX1262,?,Yes,MUI,Yes,Yes,No,Yes,Yes,Yes
+T-Deck Max,LILYGO,Handheld,Yes,Yes,Yes,Yes,N/A,eInk,No,3.1,Touch Screen,1400,?,No,No,109.67,109.87,ESP32-S3,SX1262,?,Yes,No,No,No,No,Yes,No,No
+T-Deck Plus,LILYGO,Handheld,Yes,Yes,Yes,Yes,N/A,IPS LCD,No,2.8,Keyboard,2000,?,No,No,77.16,82.11,ESP32-S3,SX1262,?,Optional,MUI,Yes,Yes,No,Yes,Yes,Yes
+T-Deck Pro,LILYGO,Handheld,Yes,Yes,Yes,Yes,N/A,eInk,No,3.1,Touch Screen,1400,?,No,No,92.35,110.85,ESP32-S3,SX1262,?,Optional,Yes,No,No,No,Yes,No,No
+T-Echo,LILYGO,Portable,Yes,No,Yes,Yes,N/A,eInk,No,1.54,Button,850,?,No,No,48.49,48.49,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+T-Echo Card,LILYGO,Portable,Yes,No,Yes,Yes,66,N/A,N/A,N/A,N/A,800,?,No,Yes,59.31,61.42,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,No,No
+T-Echo Lite,LILYGO,Bare Module / Portable,Yes,No,Optional,Optional,N/A,eInk,Yes,1.22,Button,N/A,N/A,N/A,No,15.74,38.28,nRF52840,SX1262,?,Optional,Yes,Yes,Yes,Yes,No,No,No
+T-Echo Lite Kit,LILYGO,Handheld,Yes,No,Optional,Yes,N/A,eInk,No,1.22,Keyboard,N/A,N/A,N/A,No,65.34,66.21,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+T-Echo Plus,LILYGO,Portable,Yes,No,Yes,Yes,N/A,eInk,No,1.54,Button,2400,?,No,No,64.22,66.31,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+T-Lora C6,LILYGO,Bare Module,Yes,Yes,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,16.52,16.52,ESP32-C6,SX1262,?,No,No,No,No,No,No,No,No
+T-Lora Pager,LILYGO,Handheld,Yes,Yes,Yes,Yes,N/A,IPS LCD,No,2.3,Keyboard,500,?,No,No,88,94.39,ESP32-S3,LR1121,?,No,Yes,No,No,No,Yes,No,No
+T-Watch S3,LILYGO,Portable,Yes,Yes,No,Yes,N/A,IPS LCD,No,1.54,Button,470,?,No,No,42.98,43.99,ESP32-S3,SX1262,?,No,Community,No,No,No,No,No,No
+T-Watch S3 Plus,LILYGO,Portable,Yes,Yes,No,Yes,N/A,IPS LCD,No,1.54,Button,940,?,No,No,58.74,58.74,ESP32-S3,SX1262,?,No,No,No,No,No,Yes,No,No
+T3 S3,LILYGO,Bare Module,Yes,Yes,No,No,N/A,OLED,No,0.96,Button,N/A,N/A,N/A,No,18.61,18.61,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+T5 E-Paper S3 Pro,LILYGO,Handheld,Yes,Yes,Optional,Yes,N/A,eInk,No,4.7,Touch Screen,1500,?,No,No,81.36,84.21,ESP32-S3,SX1262,?,No,No,No,No,No,Yes,No,No
+Cardputer Mesh Kit,M5Stack,Handheld,Yes,Yes,Yes,Yes,N/A,LCD,No,1.14,Keyboard,1750,?,No,No,48,48,ESP32-S3,SX1262,?,Yes,Yes,No,No,No,No,No,No
+Unit C6L,M5Stack,Portable,Yes,Yes,No,Yes,N/A,OLED,No,0.66,Button,N/A,N/A,N/A,No,22.9,22.9,ESP32-C6,SX1262,?,Yes,Yes,No,No,No,No,No,No
+Base Duo,muzi works,Bare Module,Yes,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,35,35,nRF52840,LR1121,20,Yes,Yes,No,No,No,No,No,No
+Base Uno,muzi works,Bare Module,Yes,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,25,25,nRF52840,SX1262,20,Yes,Yes,No,No,No,No,No,No
+WisBlock RAK11310,RAK,Bare Module,No,No,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,9.95,9.95,RP2040,SX1262,?,Yes,Yes,No,No,No,No,No,No
+WisBlock RAK3312,RAK,Bare Module,Yes,Yes,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,15,15,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,No
+WisBlock RAK4631,RAK,Bare Module,Yes,No,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,17.99,17.99,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh 1W Booster Starter Kit,RAK,Bare Module,Yes,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,39,39,nRF52840,SX1262,30,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Board ONE,RAK,Bare Module,Yes,No,Optional,No,N/A,OLED,Yes,1.3,Button,N/A,N/A,N/A,No,29.97,42.97,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Board ONE Pocket,RAK,Portable,Yes,No,Optional,Yes,N/A,OLED,No,1.3,Button,1000,?,No,No,46.97,59.97,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Ethernet MQTT Gateway,RAK,Gateway,Yes,No,No,Optional,65,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,43,114,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Pocket Mini,RAK,Portable,Yes,No,No,Yes,N/A,N/A,N/A,N/A,N/A,1000,?,No,No,59.97,59.97,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Pocket v2,RAK,Portable,Yes,No,Yes,Yes,N/A,OLED,No,1.3,Button,3200,?,No,No,89.97,89.97,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Repeater,RAK,Fixed,Yes,No,No,Yes,67,N/A,N/A,N/A,N/A,5200,?,Yes,Optional,99,299,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Repeater Mini,RAK,Fixed,Yes,No,No,Yes,67,N/A,N/A,N/A,N/A,3200,?,No,Yes,99,99,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Tag,RAK,Portable,Yes,No,Yes,Yes,66,N/A,N/A,N/A,N/A,1000,?,No,No,39,39,nRF52840,SX1262,?,No,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Tap,RAK,Handheld,Yes,No,Yes,Yes,65,TFT,No,2.4,Touch Screen,3200,?,No,No,109,109,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+WisMesh Tap v2,RAK,Handheld,Yes,Yes,Yes,Yes,65,TFT,No,2.4,Touch Screen,3200,?,No,No,109,109,ESP32-S3,SX1262,?,Yes,MUI,Yes,Yes,Yes,No,Yes,Yes
+WisMesh WiFi MQTT Gateway,RAK,Gateway,Yes,Yes,No,Optional,65,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,34,68,ESP32,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+Pico,Raspberry Pi,Bare Module,No,No,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,4.6,4.6,RP2040,optional,N/A,N/A,Yes,No,No,No,No,No,No
+Pico 2,Raspberry Pi,Bare Module,No,No,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,5,5,RP2350,optional,N/A,N/A,Yes,No,No,No,No,No,No
+Pico 2 W,Raspberry Pi,Bare Module,No,Yes,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,7,7,RP2350,optional,N/A,N/A,Yes,No,No,No,No,No,No
+Pico W,Raspberry Pi,Bare Module,No,Yes,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,6,6,RP2040,optional,N/A,N/A,Yes,No,No,No,No,No,No
+SenseCAP Card Tracker T1000-E,Seeed Studio,Portable,Yes,No,Yes,Yes,65,N/A,N/A,N/A,N/A,700,51,No,No,39.9,39.9,nRF52840,LR1110,?,No,Yes,Yes,Yes,Yes,No,No,No
+SenseCAP Indicator,Seeed Studio,Handheld,Yes,Yes,Optional,Yes,N/A,Capacitive RGB,No,3.95,Touch Screen,N/A,N/A,N/A,No,59,59,ESP32-S3,SX1262,?,No,MUI,No,No,No,No,No,No
+SenseCAP MeshTracker X1,Seeed Studio,Portable,Yes,No,Yes,Yes,66,N/A,N/A,N/A,N/A,1100,?,No,No,49.9,49.9,nRF52840,LR2021,?,No,Yes,Yes,Yes,Yes,No,No,No
+SenseCAP Solar Node,Seeed Studio,Fixed,Yes,No,Optional,Yes,N/A,N/A,N/A,N/A,N/A,N/A,N/A,18650,Yes,72.9,93.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+Wio Tracker 1110 Dev Kit,Seeed Studio,Bare Module,Yes,No,Yes,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,36.1,36.1,nRF52840,LR1110,?,Yes,Community,No,No,No,No,No,No
+Wio Tracker L1,Seeed Studio,Bare Module,Yes,No,Yes,No,N/A,OLED,No,1.3,Joystick,N/A,N/A,N/A,No,30.9,30.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,Yes,No,No
+Wio Tracker L1 E-Ink,Seeed Studio,Bare Module,Yes,No,Yes,No,N/A,eInk,No,2.13,Joystick,N/A,N/A,N/A,No,32.9,32.9,nRF52840,SX1262,?,Yes,Yes,Yes,No,No,No,No,No
+Wio Tracker L1 lite,Seeed Studio,Bare Module,Yes,No,Yes,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,28.9,28.9,nRF52840,SX1262,?,Yes,Yes,No,No,No,No,No,No
+Wio Tracker L1 Pro,Seeed Studio,Handheld,Yes,No,Yes,Yes,N/A,OLED,No,1.3,Joystick,2000,132,No,No,47.9,47.9,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,Yes,No,No
+Wio-E5 Dev Kit,Seeed Studio,Bare Module,No,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,26.9,26.9,STM32WLE5JC,STM32WLE5JC (SX126x like),?,Yes,?,No,No,No,No,No,No
+Wio-E5 mini Dev Board,Seeed Studio,Bare Module,No,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,21.9,21.9,STM32WLE5JC,STM32WLE5JC (SX126x like),?,Yes,?,No,No,No,No,No,No
+Wio-WM1110 Dev Kit,Seeed Studio,Bare Module,Yes,No,Optional,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,3 x AAA,No,32.9,32.9,nRF52840,LR1110,?,Yes,Community,No,No,No,No,No,No
+XIAO ESP32-S3 + SX1262,Seeed Studio,Bare Module / Portable,Yes,Yes,No,Optional,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,10.9,17.9,ESP32-S3,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes
+XIAO nRF52840 + SX1262,Seeed Studio,Bare Module,Yes,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,13.49,13.49,nRF52840,SX1262,?,Yes,Yes,Yes,Yes,Yes,No,No,No
+unPhone,unPhone,Handheld,Yes,Yes,No,Yes,N/A,resistive LCD,No,3.5,Touch Screen,1200,?,No,No,154.61,154.61,ESP32-S3,RF950W,?,No,Community MUI,No,No,No,No,No,No
+RP2040-LoRa,Waveshare,Bare Module,No,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,No,15.99,15.99,RP2040,SX1262,?,Yes,Community,Yes,Yes,Yes,No,No,No
