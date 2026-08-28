@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesh Devices Comparison</title>
+    <link href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+</head>
+<body>
+    <h1>Spreadsheet Data</h1>
+    <div id="table-container">Loading data...</div>
+    <script>
+    const FILE_URL = "mesh.csv";
+
+    async function loadSpreadsheet() {
+      try {
+        // Fetch the file as binary data
+        const response = await fetch(FILE_URL);
+        const text = await response.text();
+
+        // Parse ODS or CSV using SheetJS
+
+        //custom max min header filter
+    var minMaxFilterEditor = function(cell, onRendered, success, cancel, editorParams){
+    
+        var end;
+    
+        var container = document.createElement("span");
+    
+        //create and style inputs
+        var start = document.createElement("input");
+        start.setAttribute("placeholder", "Min");
+        start.setAttribute("min", 0);
+        start.setAttribute("max", 100);
+        start.style.padding = "4px";
+        start.style.width = "50%";
+        start.style.boxSizing = "border-box";
+    
+        start.value = cell.getValue();
+    
+        function buildValues(){
+            success({
+                start:start.value,
+                end:end.value,
+            });
+        }
+    
+        function keypress(e){
+            if(e.keyCode == 13){
+                buildValues();
+            }
+    
+            if(e.keyCode == 27){
+                cancel();
+            }
+        }
+    
+        end = start.cloneNode();
+        end.setAttribute("placeholder", "Max");
+    
+        start.addEventListener("change", buildValues);
+        start.addEventListener("blur", buildValues);
+        start.addEventListener("keydown", keypress);
+    
+        end.addEventListener("change", buildValues);
+        end.addEventListener("blur", buildValues);
+        end.addEventListener("keydown", keypress);
+    
+    
+        container.appendChild(start);
+        container.appendChild(end);
+    
+        return container;
+     }
+    
+    //custom max min filter function
+    function minMaxFilterFunction(headerValue, rowValue, rowData, filterParams){
+        //headerValue - the value of the header filter element
+        //rowValue - the value of the column in this row
+        //rowData - the data for the row being filtered
+        //filterParams - params object passed to the headerFilterFuncParams property
+    
+            if(rowValue){
+                if(headerValue.start != ""){
+                    if(headerValue.end != ""){
+                        return rowValue >= headerValue.start && rowValue <= headerValue.end;
+                    }else{
+                        return rowValue >= headerValue.start;
+                    }
+                }else{
+                    if(headerValue.end != ""){
+                        return rowValue <= headerValue.end;
+                    }
+                }
+            }
+    
+        return true; //must return a boolean, true if it passes the filter.
+    }
+
+        // Render table with Tabulator
+        new Tabulator("#table-container", {
+          data: text,
+          importFormat: "csv",
+          columnHeaderVertAlign: "middle",
+          columns: [
+            {title: "Device",headerHozAlign: "center", columns: [
+                {title: "Model", field: "Model", headerFilter: "input"},
+                {title: "Brand", field: "Brand", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            ]},
+            {title: "Type", field: "Type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            {title: "Connectivity", headerHozAlign: "center", columns: [
+                {title: "Bluetooth", field: "Bluetooth", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Wi-Fi", field: "Wi-Fi", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "GNSS", field: "GNSS", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            ]},
+            {title:"Case", headerHozAlign: "center", columns: [
+                {title:"Present?", field: "Case", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "IP rating", field: "IP rating", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            ]},
+            {title: "Screen", headerHozAlign: "center", columns: [
+                {title: "Screen type", field: "Screen type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Screen optional", field: "Screen optional", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Screen size", field: "Screen size", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
+                {title: "Interaction", field: "Interaction", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            ]},
+            {title: "Battery", headerHozAlign: "center", columns: [
+                {title: "Battery capacity", field: "Battery capacity", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Battery life (in hours)", field: "Battery life (in hours)", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Battery optional", field: "Battery optional", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            ]},
+            {title: "Solar", field: "Solar", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            {title: "Price", headerHozAlign: "center", columns: [
+                {title: "Price (min)", field: "Price (min)", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
+                {title: "Price (max)", field: "Price (max)", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
+            ]},
+            {title: "Chips/LoRa", headerHozAlign: "center", columns: [
+                {title: "MCU", field: "MCU", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Radio", field: "Radio", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "dBm", field: "dBm", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
+                {title: "Replaceable antenna", field: "Replaceable antenna", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            ]},
+            {title: "Firmware", headerHozAlign: "center", columns: [
+                {title: "Meshtastic", field: "Meshtastic", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title:"Meshcore", headerHozAlign: "center", columns: [
+                    {title: "Meshcore Companion", field: "Meshcore Companion", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                    {title: "Meshcore Repeater", field: "Meshcore Repeater", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                    {title: "Meshcore Room Server", field: "Meshcore Room Server", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                    {title: "Ripple", field: "Ripple", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                ]},
+                {title:"Reticulum", headerHozAlign: "center", columns: [
+                    {title: "Micro-reticulum", field: "Micro-reticulum", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                    {title: "Rnode", field: "Rnode", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                ]},
+            ]},
+          ]
+        });
+
+      } catch (error) {
+        document.getElementById("table-container").innerText = "Failed to load data: " + error.message;
+      }
+    }
+
+    loadSpreadsheet();
+  </script>
+</body>
+</html>
