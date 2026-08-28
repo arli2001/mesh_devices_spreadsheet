@@ -32,13 +32,11 @@
 
     async function loadSpreadsheet() {
       try {
-        // Fetch the file as binary data
+        // Fetch the file as text
         const response = await fetch(FILE_URL);
         const text = await response.text();
 
-        // Parse ODS or CSV using SheetJS
-
-        //custom max min header filter
+        //custom max min header filter from Tabulator doc
     var minMaxFilterEditor = function(cell, onRendered, success, cancel, editorParams){
     
         var end;
