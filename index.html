@@ -124,9 +124,9 @@
           importFormat: "csv",
           columnHeaderVertAlign: "middle",
           columns: [
-            {title: "Device",headerHozAlign: "center", columns: [
-                {title: "Model", field: "Model", headerFilter: "input"},
-                {title: "Brand", field: "Brand", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            {title: "Device",headerHozAlign: "center", frozen: true, columns: [
+                {title: "Model", field: "Model", formatter: "textarea", width: "35vw", headerFilter: "input"},
+                {title: "Brand", field: "Brand", formatter: "textarea", width: "15vw", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
             ]},
             {title: "Type", field: "Type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
             {title: "Connectivity", headerHozAlign: "center", columns: [
