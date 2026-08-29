@@ -102,14 +102,24 @@
         //filterParams - params object passed to the headerFilterFuncParams property
     
             if(rowValue){
-                if(headerValue.start != ""){
-                    if(headerValue.end != ""){
-                        return rowValue >= headerValue.start && rowValue <= headerValue.end;
-                    }else{
-                        return rowValue >= headerValue.start;
+                if(headerValue.start != "") {
+                    if(rowValue == "N/A") {
+                        return false;
                     }
-                }else{
-                    if(headerValue.end != ""){
+                    else {
+                        if(headerValue.end != "") {
+                            return rowValue >= headerValue.start && rowValue <= headerValue.end;
+                        } 
+                        else {
+                            return rowValue >= headerValue.start;
+                        }
+                    }
+                } 
+                else if(headerValue.end != ""){
+                    if(rowValue == "N/A") {
+                        return false;
+                    }
+                    else {
                         return rowValue <= headerValue.end;
                     }
                 }
@@ -126,51 +136,51 @@
           columns: [
             {title: "Device",headerHozAlign: "center", frozen: true, columns: [
                 {title: "Model", field: "Model", formatter: "textarea", width: "35vw", headerFilter: "input"},
-                {title: "Brand", field: "Brand", formatter: "textarea", width: "15vw", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Brand", field: "Brand", formatter: "textarea", width: "15vw", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             ]},
-            {title: "Type", field: "Type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            {title: "Type", field: "Type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             {title: "Connectivity", headerHozAlign: "center", columns: [
-                {title: "Bluetooth", field: "Bluetooth", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                {title: "Wi-Fi", field: "Wi-Fi", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                {title: "GNSS", field: "GNSS", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Bluetooth", field: "Bluetooth", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                {title: "Wi-Fi", field: "Wi-Fi", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                {title: "GNSS", field: "GNSS", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             ]},
             {title:"Case", headerHozAlign: "center", columns: [
-                {title:"Present?", field: "Case", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                {title: "IP rating", field: "IP rating", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title:"Present?", field: "Case", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                {title: "IP rating", field: "IP rating", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             ]},
             {title: "Screen", headerHozAlign: "center", columns: [
-                {title: "Screen type", field: "Screen type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                {title: "Screen optional", field: "Screen optional", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Screen type", field: "Screen type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                {title: "Screen optional", field: "Screen optional", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
                 {title: "Screen size", field: "Screen size", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
-                {title: "Interaction", field: "Interaction", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Interaction", field: "Interaction", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             ]},
             {title: "Battery", headerHozAlign: "center", columns: [
-                {title: "Battery capacity", field: "Battery capacity", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                {title: "Battery life (in hours)", field: "Battery life (in hours)", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                {title: "Battery optional", field: "Battery optional", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Battery capacity", field: "Battery capacity", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                {title: "Battery life (in hours)", field: "Battery life (in hours)", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                {title: "Battery optional", field: "Battery optional", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             ]},
-            {title: "Solar", field: "Solar", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+            {title: "Solar", field: "Solar", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             {title: "Price", headerHozAlign: "center", columns: [
                 {title: "Price (min)", field: "Price (min)", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
                 {title: "Price (max)", field: "Price (max)", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
             ]},
             {title: "Chips/LoRa", headerHozAlign: "center", columns: [
-                {title: "MCU", field: "MCU", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                {title: "Radio", field: "Radio", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "MCU", field: "MCU", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                {title: "Radio", field: "Radio", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
                 {title: "dBm", field: "dBm", headerFilter: minMaxFilterEditor, headerFilterFunc: minMaxFilterFunction, headerFilterLiveFilter:false},
-                {title: "Replaceable antenna", field: "Replaceable antenna", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Replaceable antenna", field: "Replaceable antenna", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             ]},
             {title: "Firmware", headerHozAlign: "center", columns: [
-                {title: "Meshtastic", field: "Meshtastic", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                {title: "Meshtastic", field: "Meshtastic", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
                 {title:"Meshcore", headerHozAlign: "center", columns: [
-                    {title: "Meshcore Companion", field: "Meshcore Companion", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                    {title: "Meshcore Repeater", field: "Meshcore Repeater", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                    {title: "Meshcore Room Server", field: "Meshcore Room Server", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                    {title: "Ripple", field: "Ripple", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                    {title: "Meshcore Companion", field: "Meshcore Companion", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                    {title: "Meshcore Repeater", field: "Meshcore Repeater", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                    {title: "Meshcore Room Server", field: "Meshcore Room Server", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                    {title: "Ripple", field: "Ripple", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
                 ]},
                 {title:"Reticulum", headerHozAlign: "center", columns: [
-                    {title: "Micro-reticulum", field: "Micro-reticulum", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
-                    {title: "Rnode", field: "Rnode", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, clearable: true, sort: "asc"}},
+                    {title: "Micro-reticulum", field: "Micro-reticulum", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+                    {title: "Rnode", field: "Rnode", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
                 ]},
             ]},
           ]
