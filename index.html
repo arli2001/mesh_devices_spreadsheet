@@ -128,16 +128,29 @@
         return true; //must return a boolean, true if it passes the filter.
     }
 
+    let smartphoneMediaQuery = window.matchMedia("(max-width: 768px)");
+    let deviceColumnGroup = null;
+
+    if(smartphoneMediaQuery.matches) {
+        deviceColumnGroup = {title: "Device",headerHozAlign: "center", frozen: true, columns: [
+                {title: "Model", field: "Model", formatter: "textarea", width: "35vw", headerFilter: "input"},
+                {title: "Brand", field: "Brand", formatter: "textarea", width: "15vw", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+            ]};
+    }
+    else {
+        deviceColumnGroup = {title: "Device",headerHozAlign: "center", frozen: true, columns: [
+                {title: "Model", field: "Model", formatter: "textarea", headerFilter: "input"},
+                {title: "Brand", field: "Brand", formatter: "textarea", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
+            ]};
+    }
+
         // Render table with Tabulator
         new Tabulator("#table-container", {
           data: text,
           importFormat: "csv",
           columnHeaderVertAlign: "middle",
           columns: [
-            {title: "Device",headerHozAlign: "center", frozen: true, columns: [
-                {title: "Model", field: "Model", formatter: "textarea", width: "35vw", headerFilter: "input"},
-                {title: "Brand", field: "Brand", formatter: "textarea", width: "15vw", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
-            ]},
+            deviceColumnGroup,
             {title: "Type", field: "Type", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
             {title: "Connectivity", headerHozAlign: "center", columns: [
                 {title: "Bluetooth", field: "Bluetooth", headerFilter: "list", headerFilterFunc: "in", headerFilterParams: {valuesLookup: "all", multiselect: true, sort: "asc", elementAttributes: {readonly: "readonly"}}},
